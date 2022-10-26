@@ -48,3 +48,10 @@ The class Hangman is created with the following attributes:
 There are two methods: one asking for the input (ask_for_input) and another checking if the supplied letter is in the "word" (check_guess). "Ask_for_input_ method calls "check_guess" method whenever the user input matches the condition that it is a single alphabetical character.
 
 In case the supplied letter is not part of the "word" the number of lives attributes is reduced by one. Otherwise if the letter is guessed correctly, word_guessed and num_letters attributes are respectively updated. 
+
+## Milestone 5
+Milestone 5 leverages on the Milestone 4 Hangman class and preserves all methods and attributes detailed in Milestone 4.
+
+The addition of this Milestone is a ```python play_game(word_list)``` function which defines the logic of the game:
+- the game stops in the case that the number of lives attribute is 0 (the player loses) or number of letters attribute is 0 (the player wins). 
+- the game continues otherwise, which is implemented by calling ask_input method
