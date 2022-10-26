@@ -36,8 +36,8 @@ class Hangman:
                 self.check_guess(guess=guess)
                 break
 
-def play_game(word_list):
-    game = Hangman(word_list, num_lives=3)
+def play_game(word_list, num_lives):
+    game = Hangman(word_list, num_lives)
     while True:
         if game.num_lives == 0:
             print("You lost!")
