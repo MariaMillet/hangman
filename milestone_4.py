@@ -29,8 +29,10 @@ class Hangman:
             guess = input("Please guess a letter.")
             if (not guess.isalpha()) or len(guess) != 1:
                 print("Invalid letter. Please, enter a single alphabetical character.")
+                break
             elif guess in self.list_of_guesses:
                 print("You already tried that letter!")
+                break
             else:
                 self.check_guess(guess)
                 break
@@ -39,3 +41,4 @@ test = Hangman(['apple', "banana"])
 print(test.ask_for_input())
 print(test.word_guessed)
 print(test.num_letters)
+print(test.list_of_guesses)
