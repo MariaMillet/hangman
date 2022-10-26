@@ -26,7 +26,7 @@ class Hangman:
     
     def ask_for_input(self):
         while True:
-            guess = input("Please guess a letter.")
+            guess = input("Please type a letter.")
             if (not guess.isalpha()) or len(guess) != 1:
                 print("Invalid letter. Please, enter a single alphabetical character.")
                 break
@@ -34,7 +34,7 @@ class Hangman:
                 print("You already tried that letter!")
                 break
             else:
-                self.check_guess(guess)
+                self.check_guess(guess=guess)
                 break
 
 test = Hangman(['apple', "banana"])
