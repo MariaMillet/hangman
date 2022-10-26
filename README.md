@@ -36,3 +36,15 @@ def ask_for_input():
     check_guess(guess)
 ```
 
+## Milestone 4
+The class Hangman is created with the following attributes:
+    word_list
+    num_lives
+    word
+    word_guessed
+    num_letters 
+    list_of_guesses 
+
+There are two methods: one asking for the input (ask_for_input) and another checking if the supplied letter is in the "word" (check_guess). "Ask_for_input_ method calls "check_guess" method whenever the user input matches the condition that it is a single alphabetical character.
+
+In case the supplied letter is not part of the "word" the number of lives attributes is reduced by one. Otherwise if the letter is guessed correctly, word_guessed and num_letters attributes are respectively updated. 
